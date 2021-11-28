@@ -5,63 +5,54 @@
         <title>Slider</title>
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="app/app.js"></script>
     </head>
 
     <body>
-        <div id="header">
-            <div id="headerbox1"></div>
-            <div id="headerbox2"></div>
-            <p id="headerText">Skup drugih elemenata na stranici</p>
-        </div>
+        <header class="banner">
+            <h2 class="bannerText">Skup drugih elemenata na stranici</h2>
+        </header>
 
-        <div id="topRow" class="rows">
-            <img class="images top" src="assets/slider-image-4.jpg" alt="slider-image-4" width="220" style="left: 0;">
-            <img class="images top" src="assets/slider-image-7.jpg" alt="slider-image-7" width="180" style="left: 230px;">
-            <img class="images top" src="assets/slider-image-6.jpg" alt="slider-image-6" width="120" style="left: 420px;">
-            <img class="images top" src="assets/slider-image-9.jpg" alt="slider-image-9" width="220" style="left: 550px;">
-            <img class="images top" src="assets/slider-image-8.jpg" alt="slider-image-8" width="180" style="left: 780px;">
-            <img class="images top" src="assets/slider-image-5.jpg" alt="slider-image-5" width="260" style="left: 970px;">
-        </div>
+        <main>
+            <div id="rowContainer">
+                <div id="topRow" class="rows">
+                    <img id="top6" class="images top" src="assets/slider-image-4.jpg" alt="slider-image-4">
+                    <img id="top5" class="images top" src="assets/slider-image-7.jpg" alt="slider-image-7">
+                    <img id="top4" class="images top" src="assets/slider-image-6.jpg" alt="slider-image-6">
+                    <img id="top3" class="images top" src="assets/slider-image-9.jpg" alt="slider-image-9">
+                    <img id="top2" class="images top" src="assets/slider-image-8.jpg" alt="slider-image-8">
+                    <img id="top1" class="images top" src="assets/slider-image-5.jpg" alt="slider-image-5">
+                </div>
 
-        <div id="bottomRow" class="rows">
-            <img class="images bottom" src="assets/slider-image-5.jpg" alt="slider-image-5" width="260" style="left: 0;">
-            <img class="images bottom" src="assets/slider-image-4.jpg" alt="slider-image-4" width="220" style="left: 270px;">
-            <img class="images bottom" src="assets/slider-image-1.jpg" alt="slider-image-1" width="260" style="left: 500px;">
-            <img class="images bottom" src="assets/slider-image-2.jpg" alt="slider-image-2" width="120" style="left: 770px;">
-            <img class="images bottom" src="assets/slider-image-3.jpg" alt="slider-image-3" width="180" style="left: 900px;">
-        </div>
-
-        <div class="arrows" id="activeArrows" style="z-index: 1;">
-            <div class="leftArrowContainer" id="rotateLeft">
-                <div class="arrowBox enabledArrowBox"></div>
-                <img class="arrowBtn" src="assets/arrow-blue-left.png" alt="arrow-blue-left">
+                <div id="bottomRowContainer">
+                    <div id="bottomRow" class="rows">
+                        <img id="bottom5" class="images bottom" src="assets/slider-image-5.jpg" alt="slider-image-5">
+                        <img id="bottom4" class="images bottom" src="assets/slider-image-4.jpg" alt="slider-image-4">
+                        <img id="bottom3" class="images bottom" src="assets/slider-image-1.jpg" alt="slider-image-1">
+                        <img id="bottom2" class="images bottom" src="assets/slider-image-2.jpg" alt="slider-image-2">
+                        <img id="bottom1" class="images bottom" src="assets/slider-image-3.jpg" alt="slider-image-3">
+                    </div>
+            
+                    <div id="btnContainer">
+                        <button id="btnLeft" class="button">
+                            <img src="assets/arrow-gray-left.png" alt="arrow-gray-left">
+                        </button>
+                        <button id="btnRight" class="button">
+                            <img src="assets/arrow-gray-right.png" alt="arrow-gray-right">
+                        </button>
+                    </div>
+                </div>  
             </div>
-            <div class="rightArrowContainer" id="rotateRight">
-                <div class="arrowBox enabledArrowBox"></div>
-                <img class="arrowBtn" src="assets/arrow-blue-right.png" alt="arrow-blue-right">
+    
+            <div id="textContainer">
+                <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p id="ut">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
             </div>
-        </div>
+        </main> 
 
-        <div class="arrows"  style="z-index: 0;">
-            <div class="leftArrowContainer">
-                <div class="arrowBox disabledArrowBox"></div>
-                <img class="arrowBtn" src="assets/arrow-gray-left.png" alt="arrow-gray-left">
-            </div>
-            <div class="rightArrowContainer">
-                <div class="arrowBox disabledArrowBox"></div>
-                <img class="arrowBtn" src="assets/arrow-gray-right.png" alt="arrow-gray-right">
-            </div>
-        </div>
-
-        <div id="rightCopy">
-            <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p id="ut">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-        </div>
-
-        <div id="footer">
-            <div id="footerbox"></div>
-            <p id="footerText">Skup drugih elemenata na stranici</p>
-        </div>
+        <footer id="footer" class="banner">
+            <h3 class="bannerText">Skup drugih elemenata na stranici</h3>
+        </footer>
+        
+        <script src="app/app.js" defer></script>
     </body>
 </html>

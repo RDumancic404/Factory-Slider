@@ -1,0 +1,173 @@
+$blue-color: #134880;
+$gray-color: #DDDDDD;
+$bg-color: #FFFFFF;
+$arrowBox-size: 60px;
+$row-height: 200px;
+$banner-font: HelveticaNeue;
+$text-font: SourceSansPro;
+$container-padding: 10px;
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.banner {
+    max-width: 940px;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+    height: 100px;
+    margin: 0 auto;
+    background: $gray-color;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.bannerText {
+    margin: 0px;
+    align-self: center;
+    font-family: $banner-font;
+    /* identical to box height */
+    color: $bg-color;
+}
+
+#footer {
+    margin-top: auto;
+}
+
+main {
+    max-width: 940px;
+    margin: 10px auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#rowContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-left: calc(50% - 50vw);
+    gap: 10px;
+}
+
+#textContainer {
+    flex: 0 0 300px;
+}
+
+#lorem {
+    font-family: $text-font;
+    font-size: 32px;
+    line-height: 37px;
+    color: $blue-color;
+}
+
+#ut {
+    font-family: $text-font;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    color: #484A4C;
+}
+
+#topRow {
+    position: relative;
+    height: $row-height;
+    overflow: hidden;
+}
+
+#bottomRowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#bottomRow {
+    position: relative;
+    height: $row-height;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+
+.images {
+    position: absolute;
+    height: $row-height;
+    top: 0px;
+    border-radius: 5px;
+}
+
+#btnContainer {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    width: $arrowBox-size;
+    height: $arrowBox-size;
+    border: 1px solid $gray-color;
+    background-color: $bg-color;
+    cursor: pointer;
+}
+
+#top1 {
+    width: 260px;
+    right: 0;
+}
+
+#top2 {
+    width: 180px;
+    right: 270px;
+}
+
+#top3 {
+    width: 220px;
+    right: 460px;
+}
+
+#top4 {
+    width: 120px;
+    right: 690px;
+}
+
+#top5 {
+    width: 180px;
+    right: 820px;
+}
+
+#top6 {
+    width: 220px;
+    right: 1010px;
+}
+
+#bottom1 {
+    width: 180px;
+    right: 0;
+}
+
+#bottom2 {
+    width: 120px;
+    right: 190px;
+}
+
+#bottom3 {
+    width: 260px;
+    right: 320px;
+}
+
+#bottom4 {
+    width: 220px;
+    right: 590px;
+}
+
+#bottom5 {
+    width: 260px;
+    right: 820px;
+}
