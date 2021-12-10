@@ -1,1 +1,1 @@
-Task given for job application to Factory.hr
+Image Slider for Factory
